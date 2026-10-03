@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+    color: #1d2935;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #173b5c;
+    color: white;
+    padding: 28px 18px;
+}
+
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+header h1 {
+    margin: 3px 0;
+    font-size: 34px;
+}
+
+header p {
+    margin: 0;
+    opacity: .85;
+}
+
+.hamburger {
+    border: 0;
+    background: white;
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav {
+    background: white;
+    border-bottom: 1px solid #dce1e5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+nav button {
+    border: 0;
+    border-radius: 9px;
+    padding: 10px 13px;
+    background: #edf1f4;
+    color: #243746;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background: #dce5eb;
+}
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 25px 16px 70px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero {
+    background: white;
+    border-radius: 22px;
+    padding: 45px 30px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.06);
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #e8eef3;
+    color: #173b5c;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.primary {
+    border: 0;
+    background: #173b5c;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary:hover {
+    opacity: .85;
+}
+
+.progress-card,
+.big-progress {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 28px;
+}
+
+.progress-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.progress {
+    height: 12px;
+    background: #e5e9ed;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressBar,
+#bigBar {
+    width: 0%;
+    height: 100%;
+    background: #173b5c;
+    transition: width .3s;
+}
+
+.big {
+    height: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 22px;
+    cursor: pointer;
+    box-shadow: 0 3px 14px rgba(0,0,0,.05);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 32px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #65727d;
+}
+
+.back {
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.info,
+.important,
+.task {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 3px 13px rgba(0,0,0,.04);
+}
+
+.important {
+    border-left: 6px solid #173b5c;
+}
+
+.subheading {
+    margin-top: 30px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.article {
+    background: white;
+    border-radius: 15px;
+    padding: 21px;
+    border-top: 4px solid #173b5c;
+    box-shadow: 0 3px 12px rgba(0,0,0,.05);
+}
+
+.article > span {
+    display: inline-block;
+    background: #e9eff4;
+    color: #173b5c;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.article h3 {
+    margin: 10px 0 7px;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.principles article {
+    background: white;
+    border-radius: 16px;
+    padding: 23px;
+    box-shadow: 0 3px 13px rgba(0,0,0,.05);
+}
+
+.principles article > span {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #173b5c;
+    color: white;
+    font-weight: bold;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.three div {
+    background: #eef2f5;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.three strong,
+.three small {
+    display: block;
+}
+
+.three small {
+    color: #63717d;
+}
+
+.functions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.functions article {
+    background: white;
+    padding: 23px;
+    border-radius: 16px;
+    box-shadow: 0 3px 13px rgba(0,0,0,.05);
+}
+
+.functions article > span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #173b5c;
+}
+
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.compare > div {
+    background: white;
+    padding: 23px;
+    border-radius: 16px;
+    box-shadow: 0 3px 13px rgba(0,0,0,.05);
+}
+
+.five-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.five-grid div {
+    background: #eef2f5;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.tier-grid article {
+    background: white;
+    padding: 23px;
+    border-radius: 16px;
+    box-shadow: 0 3px 13px rgba(0,0,0,.05);
+}
+
+.tier-grid article > span {
+    background: #173b5c;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #d8dee3;
+    text-align: left;
+}
+
+th {
+    background: #eaf0f4;
+}
+
+.coalitions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.coalitions div {
+    background: #edf2f5;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.criteria {
+    display: grid;
+    gap: 14px;
+}
+
+.criteria article {
+    background: #f3f6f8;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.criteria strong {
+    display: block;
+    color: #173b5c;
+    font-size: 17px;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    background: #f3f6f8;
+    margin: 8px 0;
+    padding: 13px;
+    border-radius: 9px;
+}
+
+.steps {
+    display: grid;
+    gap: 12px;
+}
+
+.steps div {
+    background: #f2f5f7;
+    border-radius: 12px;
+    padding: 17px;
+}
+
+.steps span {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    background: #173b5c;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.task label {
+    display: block;
+    background: #f3f6f8;
+    border-radius: 9px;
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.task input,
+.checklist input {
+    transform: scale(1.2);
+    margin-right: 9px;
+}
+
+.quiz-question {
+    background: white;
+    border-radius: 16px;
+    padding: 23px;
+    margin: 18px 0;
+    box-shadow: 0 3px 13px rgba(0,0,0,.05);
+}
+
+.quiz-option {
+    display: block;
+    background: #f3f6f8;
+    padding: 12px;
+    border-radius: 9px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.quiz-option:hover {
+    background: #e5ebef;
+}
+
+.quiz-submit {
+    border: 0;
+    background: #173b5c;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quiz-result {
+    background: #173b5c;
+    color: white;
+    padding: 24px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#bigPercent {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.danger {
+    border: 0;
+    background: #8c2637;
+    color: white;
+    padding: 12px 17px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+footer {
+    background: #173b5c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .three,
+    .compare {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    nav button {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

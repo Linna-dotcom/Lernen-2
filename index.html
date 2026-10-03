@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Politik – Prüfungsvorbereitung</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div>
+            <div class="eyebrow">POLITIK · PRÜFUNGSVORBEREITUNG</div>
+            <h1>Politik lernen</h1>
+            <p>Alle Themen aus deinen Lernunterlagen</p>
+        </div>
+
+        <button class="hamburger" onclick="toggleNavigation()">☰</button>
+    </div>
+</header>
+
+
+<nav id="navigation">
+
+    <button onclick="showPage('start')">🏠 Start</button>
+
+    <button onclick="showPage('grundrechte')">
+        📜 Grundrechte
+    </button>
+
+    <button onclick="showPage('verfassungsprinzipien')">
+        ⚖️ Art. 20 GG
+    </button>
+
+    <button onclick="showPage('entscheidungsprozesse')">
+        🏛 Entscheidungsprozesse
+    </button>
+
+    <button onclick="showPage('parteien')">
+        🏛 Parteien
+    </button>
+
+    <button onclick="showPage('verbaende')">
+        🤝 Verbände
+    </button>
+
+    <button onclick="showPage('tierwohl')">
+        🐄 Tierwohl
+    </button>
+
+    <button onclick="showPage('landtagswahl')">
+        🗳 Landtagswahl
+    </button>
+
+    <button onclick="showPage('stellungnahme')">
+        ✍️ Stellungnahme
+    </button>
+
+    <button onclick="showPage('quiz')">
+        🧠 Quiz
+    </button>
+
+    <button onclick="showPage('fortschritt')">
+        ☑️ Fortschritt
+    </button>
+
+</nav>
+
+
+<main>
+
+
+<!-- =====================================================
+     START
+===================================================== -->
+
+<section id="start" class="page active">
+
+    <div class="hero">
+
+        <span class="badge">ALLE LERNINHALTE</span>
+
+        <h2>Bereit für Politik?</h2>
+
+        <p>
+            Diese Lernwebsite enthält die Themen aus deinen
+            Unterlagen: Grundrechte, Verfassungsprinzipien,
+            politische Entscheidungsprozesse, Parteien,
+            Verbände, Tierwohl, die Landtagswahl Sachsen-Anhalt
+            und das Formulieren einer Stellungnahme.
+        </p>
+
+        <button class="primary" onclick="showPage('grundrechte')">
+            Lernen beginnen →
+        </button>
+
+    </div>
+
+
+    <div class="progress-card">
+
+        <div class="progress-heading">
+            <strong>Dein Lernfortschritt</strong>
+            <span id="progressPercent">0 %</span>
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+    </div>
+
+
+    <h2>Alle Themen</h2>
+
+    <div class="cards">
+
+        <article class="card" onclick="showPage('grundrechte')">
+            <div class="icon">📜</div>
+            <h3>1. Grundrechte</h3>
+            <p>
+                Artikel 1–19 GG und wichtige einzelne Grundrechte.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('verfassungsprinzipien')">
+            <div class="icon">⚖️</div>
+            <h3>2. Verfassungsprinzipien</h3>
+            <p>
+                Artikel 20 GG, Demokratie, Sozialstaat,
+                Volkssouveränität, Rechtsstaat und Gewaltenteilung.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('entscheidungsprozesse')">
+            <div class="icon">🏛</div>
+            <h3>3. Politische Entscheidungsprozesse</h3>
+            <p>
+                Gesetze, Demokratie, Beteiligung und politische Entscheidungen.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('parteien')">
+            <div class="icon">🏛</div>
+            <h3>4. Parteien</h3>
+            <p>
+                Definition, Art. 21 GG und fünf Funktionen.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('verbaende')">
+            <div class="icon">🤝</div>
+            <h3>5. Verbände</h3>
+            <p>
+                Definition, Interessenvertretung und Abgrenzung zu Parteien.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('tierwohl')">
+            <div class="icon">🐄</div>
+            <h3>6. Tierwohl</h3>
+            <p>
+                Nutztierhaltung, Fleischkonsum, Bevölkerung,
+                Kennzeichnung und politische Herausforderungen.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('landtagswahl')">
+            <div class="icon">🗳</div>
+            <h3>7. Landtagswahl Sachsen-Anhalt 2026</h3>
+            <p>
+                Ergebnisse, Veränderungen, Sitze und Regierungsbildung.
+            </p>
+        </article>
+
+
+        <article class="card" onclick="showPage('stellungnahme')">
+            <div class="icon">✍️</div>
+            <h3>8. Stellungnahme</h3>
+            <p>
+                Die vollständige Checkliste aus deinem Unterricht.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GRUNDRECHTE
+===================================================== -->
+
+<section id="grundrechte" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>📜 Grundrechte – Artikel 1–19 GG</h2>
+
+    <div class="info">
+
+        <h3>Was sind Grundrechte?</h3>
+
+        <p>
+            Die Artikel 1–19 des Grundgesetzes enthalten die
+            Menschen- und Grundrechte.
+        </p>
+
+        <p>
+            Nach deinen Unterlagen haben Grundrechte
+            <strong>Allgemeingültigkeit</strong>.
+            Sie sichern <strong>Freiheiten</strong>,
+            bieten <strong>Schutz</strong> und bringen
+            <strong>Sicherheit</strong>.
+        </p>
+
+    </div>
+
+
+    <h3 class="subheading">
+        Die wichtigen Artikel aus deinen Notizen
+    </h3>
+
+
+    <div class="article-grid">
+
+
+        <div class="article">
+            <span>Art. 1</span>
+
+            <h3>Menschenwürde</h3>
+
+            <p>
+                Die Würde des Menschen ist unantastbar.
+                Sie zu achten und zu schützen ist Aufgabe
+                staatlicher Gewalt.
+            </p>
+
+            <strong>Außerdem:</strong>
+            <p>
+                Bekenntnis zu den unverletzlichen und
+                unveräußerlichen Menschenrechten.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 2</span>
+
+            <h3>Persönliche Freiheit</h3>
+
+            <p>
+                Recht auf freie Entfaltung der Persönlichkeit.
+            </p>
+
+            <p>
+                Recht auf Leben und körperliche Unversehrtheit.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 3</span>
+
+            <h3>Gleichheit</h3>
+
+            <p>
+                Alle Menschen sind vor dem Gesetz gleich.
+            </p>
+
+            <p>
+                Männer und Frauen sind gleichberechtigt.
+            </p>
+
+            <p>
+                Niemand darf wegen bestimmter persönlicher
+                Merkmale benachteiligt oder bevorzugt werden.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 4</span>
+
+            <h3>Glaubens- und Gewissensfreiheit</h3>
+
+            <p>
+                Freiheit des Glaubens, des Gewissens und
+                des religiösen bzw. weltanschaulichen Bekenntnisses.
+            </p>
+
+            <p>
+                Die Religionsausübung wird gewährleistet.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 5</span>
+
+            <h3>Meinungs- und Pressefreiheit</h3>
+
+            <p>
+                Freiheit, seine Meinung in Wort, Schrift
+                und Bild zu äußern und zu verbreiten.
+            </p>
+
+            <p>
+                Dazu gehören auch Pressefreiheit sowie
+                die Freiheit von Kunst, Wissenschaft,
+                Forschung und Lehre.
+            </p>
+
+            <p>
+                In deinen Notizen wird außerdem der Schutz
+                der Jugend genannt.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 6</span>
+
+            <h3>Ehe und Familie</h3>
+
+            <p>
+                Ehe und Familie stehen unter dem besonderen
+                Schutz der staatlichen Ordnung.
+            </p>
+
+            <p>
+                Eltern haben grundsätzlich das Recht und
+                die Pflicht zur Pflege und Erziehung ihrer Kinder.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 7</span>
+
+            <h3>Schulwesen</h3>
+
+            <p>
+                Das Schulwesen steht unter staatlicher Aufsicht.
+            </p>
+
+            <p>
+                Religionsunterricht ist in öffentlichen Schulen
+                grundsätzlich ordentliches Lehrfach,
+                soweit die Voraussetzungen vorliegen.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 8</span>
+
+            <h3>Versammlungsfreiheit</h3>
+
+            <p>
+                Deutsche haben das Recht, sich friedlich
+                und ohne Waffen zu versammeln.
+            </p>
+
+            <p>
+                Deine Notizen weisen auch auf mögliche
+                gesetzliche Einschränkungen hin.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 9</span>
+
+            <h3>Vereinigungsfreiheit</h3>
+
+            <p>
+                Recht, Vereine und Gesellschaften zu bilden.
+            </p>
+
+            <p>
+                Vereinigungen, die gegen Strafgesetze oder
+                die verfassungsmäßige Ordnung gerichtet sind,
+                können verboten sein.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 10</span>
+
+            <h3>Brief-, Post- und Fernmeldegeheimnis</h3>
+
+            <p>
+                Das Briefgeheimnis sowie das Post- und
+                Fernmeldegeheimnis sind geschützt.
+            </p>
+
+            <p>
+                Beschränkungen sind nur unter den gesetzlichen
+                Voraussetzungen möglich.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 11</span>
+
+            <h3>Freizügigkeit</h3>
+
+            <p>
+                Deutsche haben grundsätzlich das Recht,
+                ihren Aufenthalts- und Wohnort innerhalb
+                Deutschlands frei zu wählen.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 12</span>
+
+            <h3>Berufsfreiheit</h3>
+
+            <p>
+                Freiheit der Berufswahl und Berufsausübung.
+            </p>
+
+            <p>
+                In deinen Notizen werden außerdem Ausbildungsstätte
+                und das Verbot der Zwangsarbeit genannt.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 13</span>
+
+            <h3>Unverletzlichkeit der Wohnung</h3>
+
+            <p>
+                Die Wohnung ist geschützt.
+            </p>
+
+            <p>
+                Eingriffe sind nur unter den Voraussetzungen
+                des Grundgesetzes möglich.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 14</span>
+
+            <h3>Eigentum und Erbrecht</h3>
+
+            <p>
+                Eigentum und Erbrecht werden gewährleistet.
+            </p>
+
+            <p>
+                Eigentum verpflichtet.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 15</span>
+
+            <h3>Vergesellschaftung</h3>
+
+            <p>
+                Bestimmte Grundstücke, Naturschätze und
+                Produktionsmittel können unter bestimmten
+                Voraussetzungen vergesellschaftet werden.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 16</span>
+
+            <h3>Staatsangehörigkeit und Auslieferung</h3>
+
+            <p>
+                Die deutsche Staatsangehörigkeit darf nicht
+                einfach entzogen werden.
+            </p>
+
+            <p>
+                In deinen Notizen wird außerdem der Schutz
+                politisch Verfolgter im Zusammenhang mit
+                Flucht/Asyl angesprochen.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 17</span>
+
+            <h3>Petitionsrecht</h3>
+
+            <p>
+                Jeder kann sich mit Bitten oder Beschwerden
+                an zuständige Stellen und die Volksvertretung wenden.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 18</span>
+
+            <h3>Verwirkung von Grundrechten</h3>
+
+            <p>
+                Unter sehr engen verfassungsrechtlichen
+                Voraussetzungen können bestimmte Grundrechte
+                verwirkt werden, wenn sie zum Kampf gegen die
+                freiheitliche demokratische Grundordnung
+                missbraucht werden.
+            </p>
+        </div>
+
+
+        <div class="article">
+            <span>Art. 19</span>
+
+            <h3>Schutz bei Grundrechtseinschränkungen</h3>
+
+            <p>
+                Einschränkungen von Grundrechten müssen
+                bestimmte verfassungsrechtliche Anforderungen
+                erfüllen.
+            </p>
+
+            <p>
+                Der Wesensgehalt eines Grundrechts darf
+                nicht angetastet werden.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="gr1">
+            Ich weiß, was Grundrechte sind.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="gr2">
+            Ich kann wichtige Grundrechte den Artikeln zuordnen.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="gr3">
+            Ich kann erklären, warum Grundrechte Freiheit, Schutz und Sicherheit gewährleisten.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="gr4">
+            Ich kann Art. 1, 2, 3, 4, 5, 8, 9 und 17 sicher erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="gr5">
+            Ich kann auch die übrigen Artikel 6–16 und 18–19 grundlegend erklären.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ARTIKEL 20
+===================================================== -->
+
+<section id="verfassungsprinzipien" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>⚖️ Artikel 20 GG – Verfassungsprinzipien</h2>
+
+
+    <div class="info">
+
+        <h3>Worum geht es?</h3>
+
+        <p>
+            Art. 20 GG beschreibt den grundlegenden Aufbau
+            des deutschen Staates und sichert einen
+            demokratischen Staatsaufbau.
+        </p>
+
+    </div>
+
+
+    <div class="principles">
+
+        <article>
+            <span>1</span>
+
+            <h3>Demokratisches Prinzip</h3>
+
+            <p>
+                Deutschland ist ein demokratischer Staat.
+                Die Bürgerinnen und Bürger wirken an der
+                politischen Willensbildung mit.
+            </p>
+        </article>
+
+
+        <article>
+            <span>2</span>
+
+            <h3>Sozialstaatsprinzip</h3>
+
+            <p>
+                Der Staat übernimmt soziale Verantwortung
+                und soll soziale Sicherheit und
+                Ausgleich ermöglichen.
+            </p>
+        </article>
+
+
+        <article>
+            <span>3</span>
+
+            <h3>Volkssouveränität</h3>
+
+            <p>
+                Alle Staatsgewalt geht vom Volke aus.
+            </p>
+
+            <p>
+                In deinen Notizen steht als wichtiger Bezug:
+                <strong>Wahlen</strong>.
+            </p>
+        </article>
+
+
+        <article>
+            <span>4</span>
+
+            <h3>Rechtsstaatlichkeit</h3>
+
+            <p>
+                Staatliches Handeln ist an Recht und Gesetz
+                gebunden.
+            </p>
+        </article>
+
+
+        <article>
+            <span>5</span>
+
+            <h3>Gewaltenteilung</h3>
+
+            <p>
+                Macht soll nicht an einer Stelle konzentriert
+                werden.
+            </p>
+
+            <div class="three">
+
+                <div>
+                    <strong>Legislative</strong>
+                    <small>gesetzgebende Gewalt</small>
+                </div>
+
+                <div>
+                    <strong>Exekutive</strong>
+                    <small>ausführende Gewalt</small>
+                </div>
+
+                <div>
+                    <strong>Judikative</strong>
+                    <small>richterliche Gewalt</small>
+                </div>
+
+            </div>
+
+            <p>
+                Ziel: <strong>Kontrolle der Macht</strong>
+                und Verhinderung einer
+                <strong>Machtkonzentration</strong>.
+            </p>
+        </article>
+
+
+        <article>
+            <span>6</span>
+
+            <h3>Wehrhafte Demokratie</h3>
+
+            <p>
+                Die demokratische und verfassungsmäßige Ordnung
+                soll gegen ihre Beseitigung geschützt werden.
+            </p>
+        </article>
+
+    </div>
+
+
+    <div class="important">
+
+        <h3>⭐ Unveränderlichkeitsklausel</h3>
+
+        <p>
+            Deine Unterlagen weisen ausdrücklich auf die
+            Unveränderlichkeitsklausel für
+            <strong>Art. 1 und Art. 20 GG</strong> hin.
+        </p>
+
+        <p>
+            Diese Grundentscheidungen gehören damit zum
+            besonders geschützten Kern der Verfassung.
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="art20-1">
+            Ich kann die sechs Prinzipien aus meinen Unterlagen nennen.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="art20-2">
+            Ich kann Volkssouveränität erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="art20-3">
+            Ich kann die drei Gewalten erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="art20-4">
+            Ich kann erklären, warum Gewaltenteilung Machtkonzentration verhindern soll.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="art20-5">
+            Ich weiß, was mit der Unveränderlichkeitsklausel gemeint ist.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     POLITISCHE ENTSCHEIDUNGSPROZESSE
+===================================================== -->
+
+<section id="entscheidungsprozesse" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🏛 Politische Entscheidungsprozesse</h2>
+
+
+    <div class="info">
+
+        <h3>Warum politische Entscheidungen?</h3>
+
+        <p>
+            In deinen Unterlagen wird Deutschland unter anderem
+            anhand von Gesetzen, Demokratie und politischer
+            Mitbestimmung betrachtet.
+        </p>
+
+        <h3>Genannte Vorteile</h3>
+
+        <ul>
+            <li>Sicherheitsgefühl</li>
+            <li>Grundlage durch Gesetze</li>
+            <li>Einhaltung von Gesetzen</li>
+            <li>Demokratie</li>
+            <li>Mitbestimmung durch Wahlen</li>
+        </ul>
+
+        <h3>Genannte Kritikpunkte</h3>
+
+        <ul>
+            <li>fehlende Modernität</li>
+            <li>weniger ansprechende Umwelt/Natur</li>
+            <li>wechselhaftes Klima</li>
+            <li>optimierungsbedürftige Infrastruktur</li>
+        </ul>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Verbindung zum Grundgesetz</h3>
+
+        <p>
+            Politische Entscheidungen finden innerhalb
+            der durch das Grundgesetz festgelegten Ordnung statt.
+        </p>
+
+        <p>
+            Besonders wichtig sind dabei Demokratie,
+            Volkssouveränität, Rechtsstaatlichkeit und
+            Gewaltenteilung.
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="ep1">
+            Ich kann erklären, warum Gesetze für politische Entscheidungen wichtig sind.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="ep2">
+            Ich kann Demokratie und Mitbestimmung durch Wahlen erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="ep3">
+            Ich kann politische Entscheidungen mit den Verfassungsprinzipien verbinden.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PARTEIEN
+===================================================== -->
+
+<section id="parteien" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🏛 Parteien und ihre Funktionen</h2>
+
+
+    <div class="info">
+
+        <h3>Definition aus deinen Notizen</h3>
+
+        <p>
+            Eine Partei ist eine Organisation von Menschen,
+            die ähnliche politische Überzeugungen und Interessen
+            teilen.
+        </p>
+
+        <p>
+            Parteien bündeln politische Vorstellungen und
+            Interessen und bringen sie in den politischen
+            Entscheidungsprozess ein.
+        </p>
+
+        <p>
+            Art. 21 GG ist dabei besonders wichtig:
+            Parteien wirken bei der politischen Willensbildung
+            des Volkes mit. [oai_citation:1‡bpb.de](https://www.bpb.de/themen/politisches-system/24-deutschland/40481/parteien/?utm_source=chatgpt.com)
+        </p>
+
+    </div>
+
+
+    <div class="functions">
+
+        <article>
+
+            <span>01</span>
+
+            <h3>Artikulationsfunktion</h3>
+
+            <p>
+                Aufgabe der Interessenvertretung:
+                Interessen und Wünsche der Bürger werden
+                im politischen Entscheidungsprozess
+                zum Ausdruck gebracht.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>02</span>
+
+            <h3>Aggregationsfunktion</h3>
+
+            <p>
+                Unterschiedliche politische Interessen werden
+                gebündelt und zu einem politischen Standpunkt
+                zusammengefasst.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>03</span>
+
+            <h3>Partizipationsfunktion</h3>
+
+            <p>
+                Parteien ermöglichen Menschen, sich aktiv
+                am politischen Entscheidungsprozess zu beteiligen.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>04</span>
+
+            <h3>Integrationsfunktion</h3>
+
+            <p>
+                Unterschiedliche politische Meinungen und
+                gesellschaftliche Gruppen werden in den
+                politischen Prozess eingebunden.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>05</span>
+
+            <h3>Rekrutierungsfunktion</h3>
+
+            <p>
+                Parteien ermöglichen die Rekrutierung
+                beziehungsweise Gewinnung von Personen
+                für politische Ämter und politische Aufgaben.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Weitere Bedeutung von Parteien</h3>
+
+        <ul>
+            <li>Interessen bündeln</li>
+            <li>politische Ziele formulieren</li>
+            <li>Meinungsbildung beeinflussen</li>
+            <li>politische Beteiligung ermöglichen</li>
+            <li>Kandidatinnen und Kandidaten aufstellen</li>
+            <li>an politischen Entscheidungen mitwirken</li>
+        </ul>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Was wäre ohne Parteien?</h3>
+
+        <p>
+            In deinem Unterricht wurde als Beispiel diskutiert,
+            was sich verändern würde, wenn es in Deutschland
+            keine Parteien gäbe.
+        </p>
+
+        <p>
+            Genannte mögliche Vorteile:
+            politische Beteiligung könnte direkter sein.
+        </p>
+
+        <p>
+            Genannte mögliche Nachteile:
+            Meinungen würden möglicherweise weniger gebündelt,
+            gemeinsame Entscheidungen könnten schwieriger werden
+            und politische Prozesse könnten unübersichtlicher werden.
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="p1">
+            Ich kann eine Partei definieren.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="p2">
+            Ich kenne alle fünf Parteifunktionen.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="p3">
+            Ich kann jede Funktion erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="p4">
+            Ich kann erklären, warum Parteien für politische Willensbildung wichtig sind.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="p5">
+            Ich kann Vor- und Nachteile einer Welt ohne Parteien diskutieren.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VERBÄNDE
+===================================================== -->
+
+<section id="verbaende" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🤝 Verbände</h2>
+
+
+    <div class="info">
+
+        <h3>Definition</h3>
+
+        <p>
+            Ein Verband ist ein Zusammenschluss von Menschen,
+            die ihre Interessen beziehungsweise die Interessen
+            einer bestimmten Gruppe vertreten.
+        </p>
+
+        <p>
+            Anders als eine Partei versucht ein Verband nicht,
+            selbst politische Macht durch Wahlen zu erlangen.
+            Er vertritt Interessen seiner Mitglieder und
+            versucht, auf politische Entscheidungen Einfluss
+            zu nehmen.
+        </p>
+
+    </div>
+
+
+    <div class="compare">
+
+        <div>
+
+            <h3>🏛 Partei</h3>
+
+            <ul>
+                <li>politische Ziele</li>
+                <li>Mitwirkung an politischer Willensbildung</li>
+                <li>Beteiligung an Wahlen</li>
+                <li>Kandidaten für politische Ämter</li>
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>🤝 Verband</h3>
+
+            <ul>
+                <li>bestimmte gemeinsame Interessen</li>
+                <li>Interessenvertretung</li>
+                <li>Einflussnahme auf politische Entscheidungen</li>
+                <li>Vertretung der Mitglieder nach außen</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Bezug zu deinen Aufgaben</h3>
+
+        <p>
+            In deinen Unterlagen wird ausdrücklich betont,
+            dass ein Verband Interessen einer kleineren Gruppe
+            vertreten kann und sich dadurch von einer Partei
+            unterscheidet.
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="v1">
+            Ich kann einen Verband definieren.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="v2">
+            Ich kann erklären, welche Interessen Verbände vertreten.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="v3">
+            Ich kann Partei und Verband unterscheiden.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TIERWOHL
+===================================================== -->
+
+<section id="tierwohl" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🐄 Tierwohl in Deutschland</h2>
+
+
+    <div class="info">
+
+        <h3>Die fünf Bereiche deiner Unterlagen</h3>
+
+        <div class="five-grid">
+
+            <div>1. Nutztierhaltung</div>
+            <div>2. Fleischkonsum</div>
+            <div>3. Einstellungen der Bevölkerung</div>
+            <div>4. Tierwohlkennzeichnung</div>
+            <div>5. Politische Herausforderungen</div>
+
+        </div>
+
+    </div>
+
+
+    <div class="tier-grid">
+
+
+        <article>
+
+            <span>1</span>
+
+            <h3>Nutztierhaltung</h3>
+
+            <ul>
+                <li>Viele Tiere werden in großen Betrieben gehalten.</li>
+                <li>Die Haltung ist laut Material häufig nicht tiergerecht.</li>
+            </ul>
+
+            <strong>Zentrales Problem:</strong>
+
+            <p>
+                Wie kann eine Gesellschaft mehr Tierwohl erreichen,
+                ohne die Verantwortung allein auf die Verbraucher
+                abzuwälzen?
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>2</span>
+
+            <h3>Fleischkonsum</h3>
+
+            <ul>
+                <li>Pro Person werden ungefähr 60 kg Fleisch im Jahr gegessen.</li>
+                <li>Der Konsum ist seit Jahren hoch und stabil.</li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <span>3</span>
+
+            <h3>Einstellungen der Bevölkerung</h3>
+
+            <ul>
+                <li>Viele Menschen wünschen sich mehr Tierwohl.</li>
+                <li>Menschen sind laut Material teilweise bereit, für bessere Haltung mehr zu bezahlen.</li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <span>4</span>
+
+            <h3>Tierwohlkennzeichnung</h3>
+
+            <p>
+                Eine Kennzeichnung soll zeigen, wie tiergerecht
+                ein Betrieb beziehungsweise die Haltung ist.
+            </p>
+
+            <p>
+                Sie schafft Transparenz.
+            </p>
+
+            <strong>Aber:</strong>
+
+            <p>
+                Die Haltungskennzeichnung löst das eigentliche
+                Problem der Nutztierhaltung nicht automatisch.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>5</span>
+
+            <h3>Politische Herausforderungen</h3>
+
+            <ul>
+                <li>Regeln und Kontrollen müssen verbessert werden.</li>
+                <li>Tierwohl muss berücksichtigt werden.</li>
+                <li>Wirtschaftliche Interessen spielen eine Rolle.</li>
+                <li>Lebensmittel sollen bezahlbar bleiben.</li>
+            </ul>
+
+            <p>
+                Es entsteht ein Zielkonflikt zwischen
+                <strong>Tierwohl, Wirtschaft und bezahlbaren Lebensmitteln</strong>.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="important">
+
+        <h3>⭐ Zentrale Frage</h3>
+
+        <p>
+            Wie kann eine Gesellschaft mehr Tierwohl erreichen,
+            ohne die Verantwortung allein auf Verbraucherinnen
+            und Verbraucher abzuwälzen?
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="t1">
+            Ich kenne die fünf Bereiche des Themas Tierwohl.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="t2">
+            Ich kann den Zielkonflikt beim Tierwohl erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="t3">
+            Ich kann die Tierwohlkennzeichnung erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="t4">
+            Ich kann die verschiedenen Interessen nennen.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LANDTAGSWAHL
+===================================================== -->
+
+<section id="landtagswahl" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🗳 Landtagswahl Sachsen-Anhalt 2026</h2>
+
+
+    <div class="info">
+
+        <h3>Wahl</h3>
+
+        <p>
+            Die Landtagswahl fand am
+            <strong>6. September 2026</strong> statt.
+        </p>
+
+        <p>
+            Die Wahlbeteiligung lag bei
+            <strong>77,8 %</strong>.
+        </p>
+
+    </div>
+
+
+    <h3 class="subheading">Wahlergebnis</h3>
+
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Partei</th>
+                <th>Zweitstimmen 2026</th>
+                <th>Veränderung zu 2021</th>
+                <th>Sitze</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>AfD</td>
+                <td>43,8 %</td>
+                <td>+23,0 Prozentpunkte</td>
+                <td>39</td>
+            </tr>
+
+            <tr>
+                <td>CDU</td>
+                <td>17,2 %</td>
+                <td>−19,9 Prozentpunkte</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td>SPD</td>
+                <td>9,3 %</td>
+                <td>+0,9 Prozentpunkte</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>GRÜNE</td>
+                <td>8,9 %</td>
+                <td>+3,0 Prozentpunkte</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>LINKE</td>
+                <td>8,6 %</td>
+                <td>−2,4 Prozentpunkte</td>
+                <td>8</td>
+            </tr>
+
+            <tr>
+                <td>BSW</td>
+                <td>5,3 %</td>
+                <td>neu</td>
+                <td>5</td>
+            </tr>
+
+            <tr>
+                <td>FDP</td>
+                <td>2,6 %</td>
+                <td>−3,8 Prozentpunkte</td>
+                <td>0</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <div class="info">
+
+        <h3>83 Sitze im Landtag</h3>
+
+        <p>
+            Der neue Landtag hat
+            <strong>83 Sitze</strong>.
+        </p>
+
+        <p>
+            Für eine absolute Mehrheit sind
+            <strong>42 Sitze</strong> notwendig.
+        </p>
+
+        <p>
+            Die Sitzverteilung lautet:
+        </p>
+
+        <ul>
+            <li>AfD: 39</li>
+            <li>CDU: 15</li>
+            <li>SPD: 8</li>
+            <li>GRÜNE: 8</li>
+            <li>LINKE: 8</li>
+            <li>BSW: 5</li>
+        </ul>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Vergleich mit 2021</h3>
+
+        <ul>
+            <li>AfD: 20,8 % → 43,8 %</li>
+            <li>CDU: 37,1 % → 17,2 %</li>
+            <li>GRÜNE: 5,9 % → 8,9 %</li>
+            <li>SPD: 8,4 % → 9,3 %</li>
+            <li>LINKE: 11,0 % → 8,6 %</li>
+            <li>BSW: 2021 nicht angetreten → 5,3 %</li>
+        </ul>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Rechnerische Möglichkeiten der Regierungsbildung</h3>
+
+        <p>
+            Aus den Sitzahlen ergeben sich beispielsweise
+            folgende rechnerische Mehrheiten:
+        </p>
+
+        <div class="coalitions">
+
+            <div>AfD + CDU = <strong>54</strong> Sitze</div>
+            <div>AfD + SPD = <strong>47</strong> Sitze</div>
+            <div>AfD + GRÜNE = <strong>47</strong> Sitze</div>
+            <div>AfD + LINKE = <strong>47</strong> Sitze</div>
+            <div>AfD + BSW = <strong>44</strong> Sitze</div>
+
+        </div>
+
+        <p>
+            CDU + SPD + GRÜNE kommen zusammen auf
+            <strong>31 Sitze</strong>.
+        </p>
+
+        <p>
+            Diese Zahlen zeigen, dass für eine Regierungsbildung
+            mehrere politische Akteure berücksichtigt werden müssen.
+        </p>
+
+    </div>
+
+
+    <div class="task">
+
+        <h3>☑️ Das muss ich können</h3>
+
+        <label>
+            <input type="checkbox" data-task="w1">
+            Ich kenne Datum und Wahlbeteiligung.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="w2">
+            Ich kann die wichtigsten Wahlergebnisse nennen.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="w3">
+            Ich kann die Sitzverteilung erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="w4">
+            Ich kann 42 Sitze als absolute Mehrheit erklären.
+        </label>
+
+        <label>
+            <input type="checkbox" data-task="w5">
+            Ich kann das Ergebnis mit 2021 vergleichen.
+        </label>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STELLUNGNAHME
+===================================================== -->
+
+<section id="stellungnahme" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>✍️ Stellungnahme</h2>
+
+
+    <div class="important">
+
+        <h3>⭐ Besonders wichtig</h3>
+
+        <p>
+            Das Formulieren einer Stellungnahme ist laut
+            deinem Prüfungsblatt ein
+            <strong>Aufgabenschwerpunkt</strong>.
+        </p>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Die fünf Kriterien aus deiner Checkliste</h3>
+
+        <div class="criteria">
+
+            <article>
+
+                <strong>1. Sachlich richtig</strong>
+
+                <p>
+                    Habe ich mein Urteil auf fachliche
+                    Kenntnisse gestützt?
+                </p>
+
+                <p>
+                    Ich verwende richtige Informationen über
+                    Parteien, ihre Aufgaben und ihre Bedeutung.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>2. Begründet</strong>
+
+                <p>
+                    Habe ich meine Meinung nachvollziehbar
+                    begründet?
+                </p>
+
+                <p>
+                    Ich nenne nicht nur meine Meinung,
+                    sondern erkläre, warum ich zu diesem
+                    Urteil komme.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>3. Kriterienorientiert</strong>
+
+                <p>
+                    Nach welchen Maßstäben beurteile ich
+                    die Bedeutung von Parteien?
+                </p>
+
+                <p>
+                    Beispiele aus deiner Checkliste:
+                    Interessenvertretung, politische Beteiligung,
+                    Meinungsbildung und demokratische Legitimation.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>4. Multiperspektivisch</strong>
+
+                <p>
+                    Habe ich unterschiedliche Interessen
+                    und Folgen berücksichtigt?
+                </p>
+
+                <p>
+                    Ich betrachte die Bedeutung von Parteien
+                    aus mehreren Perspektiven und gehe auch
+                    auf Gegenargumente ein.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <strong>5. Eigenständiges Urteil</strong>
+
+                <p>
+                    Ist mein abschließendes Urteil klar
+                    und differenziert?
+                </p>
+
+                <p>
+                    Ich komme zu einem eigenständigen,
+                    begründeten und gegebenenfalls abwägenden
+                    Urteil – nicht nur zu „Ich finde ...“.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Eine gute Stellungnahme ...</h3>
+
+        <ul class="checklist">
+
+            <li>
+                <input type="checkbox" data-task="s1">
+                weiß, worüber sie urteilt.
+            </li>
+
+            <li>
+                <input type="checkbox" data-task="s2">
+                begründet, warum sie zu diesem Urteil kommt.
+            </li>
+
+            <li>
+                <input type="checkbox" data-task="s3">
+                nutzt Kriterien zur Beurteilung.
+            </li>
+
+            <li>
+                <input type="checkbox" data-task="s4">
+                berücksichtigt verschiedene Perspektiven und Gegenargumente.
+            </li>
+
+            <li>
+                <input type="checkbox" data-task="s5">
+                kommt zu einem klaren, eigenständigen und differenzierten Urteil.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>So kannst du deine Stellungnahme aufbauen</h3>
+
+        <div class="steps">
+
+            <div>
+                <span>1</span>
+                <strong>Fragestellung klären</strong>
+                <p>
+                    Was soll ich beurteilen?
+                </p>
+            </div>
+
+            <div>
+                <span>2</span>
+                <strong>Fachwissen verwenden</strong>
+                <p>
+                    Welche Informationen aus dem Unterricht
+                    brauche ich?
+                </p>
+            </div>
+
+            <div>
+                <span>3</span>
+                <strong>Kriterien anwenden</strong>
+                <p>
+                    Nach welchen Maßstäben beurteile ich das Thema?
+                </p>
+            </div>
+
+            <div>
+                <span>4</span>
+                <strong>Perspektiven berücksichtigen</strong>
+                <p>
+                    Welche unterschiedlichen Interessen und
+                    Gegenargumente gibt es?
+                </p>
+            </div>
+
+            <div>
+                <span>5</span>
+                <strong>Urteil formulieren</strong>
+                <p>
+                    Zu welchem eigenständigen und begründeten
+                    Ergebnis komme ich?
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="important">
+
+        <h3>💡 Für deine Parteien-Aufgabe</h3>
+
+        <p>
+            Bei der Beurteilung der Bedeutung von Parteien
+            kannst du laut deiner Checkliste insbesondere
+            folgende Kriterien betrachten:
+        </p>
+
+        <ul>
+            <li>Interessenvertretung</li>
+            <li>politische Beteiligung</li>
+            <li>Meinungsbildung</li>
+            <li>demokratische Legitimation</li>
+        </ul>
+
+        <p>
+            Außerdem sollst du unterschiedliche Perspektiven
+            und Gegenargumente berücksichtigen.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUIZ
+===================================================== -->
+
+<section id="quiz" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>🧠 Gesamtquiz</h2>
+
+    <p class="intro">
+        Hier werden alle Themenbereiche abgefragt.
+    </p>
+
+    <div id="quizContainer"></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FORTSCHRITT
+===================================================== -->
+
+<section id="fortschritt" class="page">
+
+    <button class="back" onclick="showPage('start')">
+        ← Zurück
+    </button>
+
+    <h2>☑️ Dein Lernfortschritt</h2>
+
+
+    <div class="big-progress">
+
+        <div id="bigPercent">
+            0 %
+        </div>
+
+        <div class="progress big">
+            <div id="bigBar"></div>
+        </div>
+
+        <p id="progressMessage">
+            Fang mit dem ersten Thema an!
+        </p>
+
+    </div>
+
+
+    <div class="info">
+
+        <h3>Empfohlene Reihenfolge</h3>
+
+        <ol>
+            <li>Grundrechte</li>
+            <li>Artikel 20 / Verfassungsprinzipien</li>
+            <li>Politische Entscheidungsprozesse</li>
+            <li>Parteien</li>
+            <li>Verbände</li>
+            <li>Tierwohl</li>
+            <li>Landtagswahl</li>
+            <li>Stellungnahme</li>
+            <li>Gesamtquiz</li>
+        </ol>
+
+    </div>
+
+
+    <button class="danger" onclick="resetProgress()">
+        Lernfortschritt zurücksetzen
+    </button>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    Politik · Lernwebsite
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
